@@ -1,0 +1,6 @@
+<div  [style.left.px]="index*30" [style.left.px]="index*30" class="card animated"  [class.female]="male==false"  [class.male]="male==true" [class.animated]="clicked==true" (click)="animate()">
+  <p *ngIf="clickedLate">{{ text }}</p>
+  <p *ngIf="clickedLate">{{ vers }}</p>
+</div>
+
+

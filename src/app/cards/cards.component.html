@@ -1,0 +1,19 @@
+<div style="text-align:center; margin-top:20px;">
+  <mat-slide-toggle
+    class="example-margin"
+    [(ngModel)]="male"
+    (change)="changeMale($event)"
+  >
+  </mat-slide-toggle>
+  <br />
+  Are you male or female? <span *ngIf="male">(currently: male)</span> <span *ngIf="!male">(currently: female)</span>
+
+</div>
+
+
+
+
+<br /><br />
+
+<app-card *ngFor="let card of cards; let i = index" [text]="card.text" [vers]="card.vers" [index]="i" [male]="male">
+</app-card>
